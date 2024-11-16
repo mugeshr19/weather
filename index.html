@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f8ff6b26db.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-100">
+    
+    <!-- Step 2: Center the text -->
+    <div class="text-center pt-10 text-xl justify-center font-semibold h-auto w-96 border-solid border-2 border-black bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg search">
+        <input class="w-40 h-8 p-6 rounded-xl" id="city" type="text" placeholder="enter city" name="city_name">
+        <button class="p-3 w-14 bg-gray-400 rounded-full  " id="search-btn" type="submit" onclick="searchweather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div>
+          <i class="fa-solid fa-cloud-bolt mt-6 text-teal-900 text-8xl"></i>
+          <h1 class="mt-1.5 text-3xl" id="temperature">0°C</h1>
+          <h2 class="mt-1.5 text-3xl" id="display_name">City</h2>
+        </div>
+        <div class="flex">
+          <i class="fa-solid fa-wind mt-6 ml-20 mr-36 text-4xl"></i>
+          <i class="fa-solid fa-smog mt-6 text-4xl"></i>
+        </div>
+        <div class="flex">
+          <p class="ml-11 mt-3 mr-24 text-xl">Wind Speed</p>
+          <p class="text-xl mt-3">Humidity</p>
+        </div>
+        <div class="flex">
+          <p class="ml-16 mt-3 mr-32 text-xl mb-6" id="Wind"> 0 km/hr</p>
+          <p class="text-xl mt-3" id="Humidity"> 0 %</p>
+        </div>
+        <dialog id="myDialog" class="p-[22px] space-y-[14px] rounded-xl border-2 border-solid border-black">
+          <p>Enter valid city name!</p>
+          <button id="closeDialog" class="p-[4px] rounded-xl border-2 border-solid border-black hover:bg-gray-400">Close</button>
+      </dialog>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
