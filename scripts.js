@@ -35,6 +35,7 @@ async function checkWeather() {
         document.getElementById("temperature").innerHTML =  "0°C";
         document.getElementById("Humidity").innerHTML = "0%";
         document.getElementById("Wind").innerHTML = "0km/hr";
+        document.getElementById("city").value='';
         return;
     }
     console.log(data);
